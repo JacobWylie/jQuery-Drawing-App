@@ -2,6 +2,7 @@
 // Solution: When user interacts cause changes to app
 
 var color = $('.selected').css('background-color');
+var context = $('canvas')[0].getContext('2d');
 
 // When clicking on control list items
 $('.controls').on('click', 'li', function() {
@@ -44,8 +45,12 @@ $('#addNewColor').click(function(){
 
 
 // On mouse events on the canvass
-	// Draw lines
 
+	// Draw lines
+	context.beginPath();
+	context.moveTo();
+	context.lineTo();
+	context.stroke();
 
 
 
